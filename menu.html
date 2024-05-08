@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>RestaurApp</title>
+</head>
+
+
+<body class="fondopatron" onload="mostrarNmesas()">
+    <button id="m_volver" onclick="window.location = 'admin.html'">Volver &#8634</button>
+
+    <header id="t_header">
+        <h1 id="i_nombre">RestaurApp</h1>
+    </header>
+<div id="menu_modificaciones">
+    <h3>Gestionar mesas</h3>
+    <div id="menu_articulos">
+            <h4>Número de mesas actuales:</h4>
+            <p id="numeroMesas"></p>
+
+        <button onclick="nuevaMesa()">Nueva mesa</button>
+        <button onclick="borrarMesa()">Borrar mesa</button>
+    </div>
+    <h3>Añadir artículo</h3>
+    <div id="nuevos_articulos">
+        <input type="text" placeholder="Nombre del Articulo" id="nuevoNombre">
+        <select name="select" id="select">
+            <option value="bebida">Bebida</option>
+            <option value="comida">Comida</option>
+            <option value="postre">Postre</option>            
+        </select>
+        <input type="number" placeholder="Precio" id="nuevoPrecio">
+        <button onclick="nuevoArticulo()">Nuevo artículo</button>
+    </div>
+    <h3>Editar artículo</h3>
+    <div id="buscar_articulos">
+        <input type="text" id="m_buscarArticulo" placeholder="Nombre del Artículo">
+        <button onclick="buscarArticulo()">Buscar</button>
+    </div>
+    <div id="muestra_articulos"></div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>

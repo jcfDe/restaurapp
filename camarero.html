@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>camarero</title>
+</head>
+
+<body onload="camareroIn()" class="fondopatron">
+
+    <header id="c_header">
+       <!--  <h4><a href="login.html">Salir</a></h4> -->
+       <button onclick="window.location = 'login.html'">Cerrar sesion</button>
+        <h4 id="c_nombre">Camarero</h4>
+    </header>
+
+    <h2  class= "c_style1">Menú camarero</h2>
+    <h3  class= "c_style">Lista mesas abiertas</h3>
+    <div class="c_cpntainer1">
+
+    </div>
+    <h3 class= "c_style">Abrir nueva mesa</h3>
+    <div class="c_cpntainer2">
+
+    </div>
+
+    <div class= "c_center">
+        <br>
+        <br>
+        <details>
+            <summary class= "c_style">
+                Resto de mesas
+            </summary>
+            <br>
+            <div class="c_cpntainer3">
+
+            </div>
+        </details>
+    </div>
+    <h3  class= "c_style">Historial tickets</h3>
+    <div id="c_historial">
+    </div>
+</body>
+<script src="./modules/camarero.js"></script>
+<script src="./modules/index.js"></script>
+</html>

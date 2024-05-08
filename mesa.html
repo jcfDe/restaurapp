@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body onload="mostrarArticulos(); cambiarTitulo(); mostrarComanda()" class="fondopatron">
+    <button id="m_volver" onclick="window.location = 'camarero.html'">Volver &#8634</button>
+    <section id="m_contenedorGeneral">
+        <section id="m_mesa">
+            <h1 id="m_titulo">Mesa</h1>
+            <h2>Comanda:</h2>
+            <div id="m_comanda">
+                <div>
+                    <h4>Bebidas:</h4>
+                    <ul id="m_dsp_bebidas">
+                        
+                    </ul>
+                </div>
+            <div>
+                <h4>Comidas:</h4>
+                <ul id="m_dsp_comidas">
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Postres:</h4>
+                <ul id="m_dsp_postres">
+                    
+                </ul>
+            </div>
+        </div>
+        </div>
+        </section>
+        <details class= "m_desplegable" id="m_bebidas">
+            <summary>
+                Bebidas
+            </summary>
+
+
+            
+        </details>
+        <details class= "m_desplegable" id="m_comidas">
+            <summary>
+                Comida
+            </summary>  
+        </details>
+        <details class= "m_desplegable" id="m_postres">
+            <summary>
+                Postre
+            </summary>  
+        </details>
+
+        <div id="m_botones">
+            <button id="m_añadir" onclick="guardarComanda()">Añadir comanda</button>
+            <button id="m_cerrarMesa" onclick="cerrarMesa()">Generar cuenta</button>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+<script src="./modules/mesa.js"></script>
+</html>

@@ -1,0 +1,622 @@
+/* ------------------------------- ADMIN AREA --------------------------------------- */
+.fondopatron {
+    background-image: url("images/fondoMonocromo.png");
+    margin: none;
+    padding: none;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 15vw;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 10vw;
+    margin: 10px;
+}
+
+header#a_header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 4vw
+}
+
+#a_gestion {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+#a_gestion h2 {
+    margin: 5px 0px
+}
+
+#a_tabla {
+    padding: 0 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.a_tablaH {
+    height: 12vw;
+    font-size: 3.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 4vw;
+    text-align: start;
+}
+
+.a_tablaR {
+    height: 12vw;
+    font-size: 3.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.a_ids {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p.a_rendimiento {
+    margin-left: 1vw;
+    font-size: 3.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.a_rendimiento {
+    display: block;
+    width: 30%;
+    height: 30px;
+}
+
+.a_ids {
+    height: 30px;
+    width: 10%;
+}
+
+
+.a_tablaR input {
+    margin: 0 5px;
+    width: 30%;
+    height: 30px;
+    ;
+}
+
+#a_resultados {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#a_gestion button {
+    font-size: 4.3vw;
+    margin: 30px 20px;
+    width: 26vw;
+}
+
+#m_titulo{
+    text-align: center;
+    font-size: 12vw;
+    margin-bottom: 40px;
+}
+
+
+/*---------------------------------------CAMARERO-----------------*/
+#c_popup {
+    display: block;
+    position: absolute;
+    z-index: 3;
+}
+
+#c_login {
+    position: relative;
+    top: 10%;
+    border: 2px solid black;
+    background-color: #ffcd4d82;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 60vw;
+    height: 60vw;
+    margin: 13vw;
+}
+
+#c_login input {
+    border: solid 2px #000000;
+    border-radius: 12px;
+    text-align: center;
+    height: 6vw;
+}
+
+#c_login input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+.c_cpntainer1,
+.c_cpntainer2,
+.c_cpntainer3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.c_cpntainer1 div,
+.c_cpntainer2 div,
+.c_cpntainer3 div {
+    align-self: center;
+    margin: 0 auto 0 auto;
+}
+
+.c_mesasA {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(149, 220, 129);
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.c_mesasC {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 195, 241);
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.c_mesasR {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(242, 99, 127);
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#c_header {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: right;
+
+}
+
+#c_header h4 {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.c_style {
+    font-size: 15px;
+    text-align: center;
+}
+
+.c_style1 {
+    font-size: 12vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: rgb(0, 0, 0);
+}
+
+.c_ticket {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(201, 201, 201);
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* -------------------------------------------------------------MESA--------------------------------------------------*/
+
+#m_contenedorGeneral {
+    width: 100%;
+    min-width: 256px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button#m_volver {
+    position: fixed;
+    font-weight: bold;
+    top: 10px;
+    right: 10px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+section#m_mesa {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#m_comanda {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.69);
+    border: 1px rgba(255, 255, 255, 0.551) solid;
+}
+
+div#m_comanda div {
+    flex-grow: 4;
+}
+
+div#m_botones {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#m_contenedorGeneral li {
+    list-style: none;
+}
+
+#m_botones #m_añadir {
+    margin: 8px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#m_botones #m_cerrarMesa {
+    margin: 8px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.m_desplegable {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    text-align: center;
+
+}
+
+.m_filaDesplegable {
+    display: flex;
+    border: 2px rgba(255, 255, 255, 0.481) solid;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 12px;
+    width: 79vw;
+    justify-content: space-between;
+}
+
+.m_filaDesplegable p {
+    width: 70%;
+}
+
+.m_filaDesplegable p.m_display {
+    align-self: flex-end;
+    width: 10%;
+}
+
+.m_filaDesplegable button {
+    align-self: flex-end;
+    width: 10%;
+    height: 32.4px;
+    border-radius: 4px;
+    border: 1px solid #585858;
+    margin: 10px 0;
+}
+
+.m_filaDesplegable button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+#m_dsp_bebidas,
+#m_dsp_comidas,
+#m_dsp_postres {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------------------------------------- Ticket ------------------------ */
+.fondoblanco {
+    background-color: white;
+}
+
+#t_header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    text-align: right;
+    font-size: 4vw;
+}
+
+#t_head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#t_head h1 {
+    font-size: 8vw;
+}
+
+#t_head p {
+
+    margin: 0;
+}
+
+#t_body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    align-content: center;
+
+}
+
+#t_tabla {
+    margin-top: 10px;
+}
+
+.t_fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.t_fila p {
+    margin: 2px;
+}
+
+.t_articulos {
+    text-align: left;
+}
+
+#t_pagar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ----------------------------------------- Pago -------------------------------------- */
+#p_body {
+    align-content: center;
+}
+
+#p_total {
+    margin: 1vw 1vw;
+    padding: 0;
+    font-size: 10vw;
+}
+
+#p_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+#p_contenedor h4 {
+    padding: 0 5vw;
+}
+
+#p_contenedor h2 {
+    margin: 2vw 2vw;
+    padding: 0 5vw;
+}
+
+#p_caducidad {
+    display: flex;
+    flex-direction: row;
+}
+
+#p_caducidad input {
+    width: 10vw
+}
+
+#p_tpv {
+    border: black solid 2px;
+    padding: 5vw;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------ Index --------------------------------------- */
+#i_ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* -------------------------------------------------- botones ---------------------------------- */
+
+button {
+    background-color: #ffffff49;
+    border-radius: 18px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 4vw;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------DETAILS-------------------------------------- */
+#detailscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#numeroMesas{
+    text-align: center;
+}
+#menu_modificaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#muestra_articulos div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#nuevos_articulos{
+    display: flex;
+    flex-direction: column;
+}
+#nuevos_articulos > input, #nuevos_articulos > select, #nuevos_articulos > button{
+margin: 5px;
+}
+#muestra_articulos div button {
+margin-top: 10px;
+}
+#muestra_articulos div p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    }
+summary.c_style::marker,
+summary::marker {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+.c_center {
+    margin-top: 20px;
+justify-content: center;
+display: flex;
+}
+summary.c_style {
+padding: 0;
+}
+
+summary {
+    background-color: rgba(255, 255, 255, 0.418);
+    border: 2px rgba(255, 255, 255, 0.481) solid;
+    border-radius: 12px;
+    width: 59vw;
+    height: 10vw;
+    font-size: 6vw;
+    text-align: left;
+    padding-left: 19vw;
+}
+
+summary:before {
+    content: "\01F447";
+    /* the new icon */
+    color: #696f7c;
+    margin-right: 5px;
+}
+
+details[open]>summary:before {
+    content: "\01F446";
+    /* the new icon */
+
+    margin-right: 5px;
+}
+
+#m_bebidas summary:before {
+    content: "\01F37B";
+    /* the new icon */
+    color: #696f7c;
+    margin-right: 5px;
+}
+
+details#m_bebidas[open]>summary:before {
+    content: "\01F37B";
+    /* the new icon */
+
+    margin-right: 5px;
+}
+
+#m_comidas summary:before {
+    content: "\01F354";
+    /* the new icon */
+    color: #696f7c;
+    margin-right: 5px;
+}
+
+details#m_comidas[open]>summary:before {
+    content: "\01F354";
+    /* the new icon */
+
+    margin-right: 5px;
+}
+
+#m_postres summary:before {
+    content: "\01F368";
+    /* the new icon */
+    color: #696f7c;
+    margin-right: 5px;
+}
+
+details#m_postres[open]>summary:before {
+    content: "\01F368";
+    /* the new icon */
+
+    margin-right: 5px;
+}
+
+
+details#a_ticket[open] div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   
+   }
+
+/* ------------------------------------------------tabla comanda------------------------------------ */
+
+div#m_comanda div ul {
+    padding: 5px;
+}
+
+div#m_comanda div h4 {
+
+    margin: 5px
+}
+
+div#m_comanda div {
+    text-align: center;
+    font-size: 3vw;
+
+}
+
+
+/* copas = U+1F37B
+hamburguesa = U+1F354
+helado = U+1F368 */
