@@ -1,5 +1,4 @@
-# juegoDeRol
-RestaurApp
+## RestaurApp
 
 Aplicacion en Front para un restaurante
 
